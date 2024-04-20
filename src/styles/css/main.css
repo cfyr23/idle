@@ -6,17 +6,16 @@
   font-family: "Roboto Slab", sans-serif;
   color: #fff;
   background: #151515;
-  display: flex;
-  align-content: center;
-  width: 100%;
 }
 
 .app {
+    background: #151515;
     height: 100vh;
     max-width: 500px;
     padding: 30px 16px;
     position: relative;
     width: 100%;
+    margin: 0 auto;
 }
 
 .home {
