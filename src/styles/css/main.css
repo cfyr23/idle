@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tektur", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: #fff;
 }
 
 .app {
   height: 100vh;
-  height: 100svh;
-  padding-top: 100px;
-  background-color: #000;
+  background: #151515;
+  padding: 16px 30px;
 }
 
 .home {
@@ -19,12 +18,12 @@
   border-radius: 10px;
   max-width: 400px;
   margin: 0 auto;
-  padding: 30px 30px 0px 30px;
-  background: url("../../assets/trash_bg.jpg") center no-repeat;
 }
+
 .home__title {
   margin-bottom: 50px;
 }
+
 .home__balance {
   display: flex;
   align-items: center;
@@ -32,13 +31,12 @@
   gap: 10px;
   margin-bottom: 30px;
 }
+
 .home__balance p {
   font-size: 42px;
   font-weight: 500;
 }
-.home__balance img {
-  max-width: 35px;
-}
+
 .home__coin {
   display: flex;
   align-items: center;
@@ -46,14 +44,17 @@
   border-radius: 50%;
   transition: 0.05s all ease-in;
 }
+
 .home__coin img {
   width: 100%;
   max-width: 250px;
   cursor: pointer;
 }
+
 .home__coin.clicked {
   scale: 1.05;
 }
+
 .home__nav {
   border-radius: 10px;
   margin-top: 30px;
@@ -65,6 +66,7 @@
   padding: 0px 20px;
   position: relative;
 }
+
 .home__nav a {
   position: relative;
   padding: 5px;
@@ -74,22 +76,28 @@
   align-items: center;
   flex-direction: column;
 }
+
 .home__nav a:hover img {
   scale: 1.1;
 }
+
 .home__nav a img {
   transition: 0.15s all ease-in;
 }
+
 .home__nav p {
   font-size: 14px;
 }
+
 .home__footer {
   margin-top: 70px;
 }
+
 .home__footer p {
   text-align: center;
   font-size: 10px;
 }
+
 .home__footer a {
   color: blue;
   text-decoration: none;
