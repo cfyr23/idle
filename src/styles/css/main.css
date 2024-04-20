@@ -10,31 +10,27 @@
 .app {
   height: 100vh;
   background: #151515;
-  padding: 16px 30px;
+  padding: 30px 16px;
+  max-width: 500px;
 }
 
 .home {
-  box-shadow: 0px 13px 81px 30px #6f737f;
-  border-radius: 10px;
-  max-width: 400px;
   margin: 0 auto;
-}
-
-.home__title {
-  margin-bottom: 50px;
+  height: 100%;
+  display: flex;
+  gap: 30px;
 }
 
 .home__balance {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 20px;
 }
 
 .home__balance p {
-  font-size: 42px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .home__coin {
@@ -56,15 +52,13 @@
 }
 
 .home__nav {
-  border-radius: 10px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  background-color: rgba(111, 115, 127, 0.6);
-  padding: 0px 20px;
-  position: relative;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  widht: 100%;
 }
 
 .home__nav a {
