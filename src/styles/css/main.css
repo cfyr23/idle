@@ -56,7 +56,7 @@
   scale: 1.05;
 }
 
-.home__nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +66,7 @@
   widht: 100%;
 }
 
-.home__nav a {
+.nav a {
   position: relative;
   padding: 5px;
   text-decoration: none;
@@ -76,31 +76,16 @@
   flex-direction: column;
 }
 
-.home__nav a:hover img {
+.nav a:hover img {
   scale: 1.1;
 }
 
-.home__nav a img {
-  transition: 0.15s all ease-in;
-}
-
-.home__nav p {
+.nav p {
   font-size: 14px;
 }
 
-.home__footer {
-  margin-top: 70px;
-}
 
-.home__footer p {
-  text-align: center;
-  font-size: 10px;
-}
 
-.home__footer a {
-  color: blue;
-  text-decoration: none;
-}
 
 .boosts {
   box-shadow: 0px 13px 81px 30px #6f737f;
