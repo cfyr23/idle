@@ -17,7 +17,6 @@ const CanvasClick: FC<ICanvasClick> = ({x, y, click}) => {
             if(context){
                 context.font = '30px Tektur';
                 context.fillStyle = 'white';
-                context.fillText('+' + `${click}`, 10, 30);
             }
         }
     }, [click]);
