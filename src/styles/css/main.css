@@ -5,13 +5,18 @@
   box-sizing: border-box;
   font-family: "Roboto Slab", sans-serif;
   color: #fff;
+  background: #151515;
+  display: flex;
+  align-content: center;
+  width: 100%;
 }
 
 .app {
-  height: 100vh;
-  background: #151515;
-  padding: 30px 16px;
-  max-width: 500px;
+    height: 100vh;
+    max-width: 500px;
+    padding: 30px 16px;
+    position: relative;
+    width: 100%;
 }
 
 .home {
