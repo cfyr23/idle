@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from 'react'
-import coinImage from '../assets/coin.webp'
 import { Link } from 'react-router-dom'
 import CanvasClick from '../components/CanvasClick';
 
