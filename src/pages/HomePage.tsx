@@ -93,9 +93,8 @@ const HomePage: FC<IHomeProps> = ({balance, setBalance, clickValue, totalClicked
 
             {/* canvas for click value */}
             {position.x && position.y && isCanvasShowed ? <CanvasClick x={position.x} y={position.y} click={clickValue} /> : null}
- 
-        </div>
-        <div className="nav">
+
+             <div className="nav">
                 <Link to='/'>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_14_1480)">
@@ -135,6 +134,9 @@ const HomePage: FC<IHomeProps> = ({balance, setBalance, clickValue, totalClicked
                     <p>Други</p>
                 </Link>
             </div>
+            
+        </div>
+       
     )
 }
 
