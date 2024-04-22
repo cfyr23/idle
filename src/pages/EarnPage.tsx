@@ -24,6 +24,7 @@ const EarnPage: FC<IEarnPageProps> = ({totalClicked, balance, setBalance}) => {
                 balance={balance}
                 setBalance={setBalance}
             />
+
         </div>
     )
 }

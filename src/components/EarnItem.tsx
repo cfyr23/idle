@@ -1,6 +1,4 @@
-import { FC, useEffect, useState } from 'react'
-import swordImage from "../assets/swords-icon.svg"
-import gotoImage from "../assets/goto-icon.svg";
+import { FC, useEffect, useState } from 'react';
 
 interface IEarnItemProps{
     id: number,
@@ -26,9 +24,8 @@ const EarnItem: FC<IEarnItemProps> = ({id, title, award, goal, totalClicked, bal
         <div className="list__item">
             <div className="list__side">
                 <p className="list__item-title">{title}</p>
-                <p className="list__item-description"><img src={swordImage} alt="sword"/>{award}</p>
+                <p className="list__item-description">{award}</p>
             </div>
-            <img src={gotoImage} alt=""/>
         </div>
     )
 }

@@ -66,6 +66,7 @@ const EarnList: FC<IEarnListProps> = ({balance, setBalance, totalClicked}) => {
                     />
                 ))}
             </div>
+
         </div>
     );
 }
