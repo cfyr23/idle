@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import coinImage from "../assets/coin.svg";
+import coinImage from "../assets/coin.svg"
 import energyImage from "../assets/energy-icon.svg";
 
 interface ISecretPageProps{
