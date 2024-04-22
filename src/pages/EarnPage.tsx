@@ -11,7 +11,7 @@ interface IEarnPageProps{
 const EarnPage: FC<IEarnPageProps> = ({totalClicked, balance, setBalance}) => {
 
     return (
-        <div className='earn'>
+        <div className="page__content">
             <div className="earn__nav">
                 <Link to="/"><img width="22" height="22" src="https://img.icons8.com/windows/32/ffffff/long-arrow-left.png" alt="long-arrow-left"/>Back</Link>
             </div>
