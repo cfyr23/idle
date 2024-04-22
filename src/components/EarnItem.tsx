@@ -1,4 +1,6 @@
 import { FC, useEffect, useState } from 'react'
+import swordImage from "../assets/swords-icon.svg";
+import gotoImage from "../assets/goto-icon.svg";
 
 interface IEarnItemProps{
     id: number,
@@ -9,7 +11,6 @@ interface IEarnItemProps{
     balance: number,
     setBalance: (num :number) => void,
 }
-
 
 const EarnItem: FC<IEarnItemProps> = ({id, title, award, goal, totalClicked, balance, setBalance}) => {
     const [isBalanceUpdated, setIsBalanceUpdated] = useState<boolean>(false);
@@ -22,16 +23,12 @@ const EarnItem: FC<IEarnItemProps> = ({id, title, award, goal, totalClicked, bal
     }, [totalClicked, goal, balance, award, setBalance, setIsBalanceUpdated, isBalanceUpdated])
 
     return (
-        <div className={totalClicked >= goal ? 'earn__item _done' : 'earn__item'}>
-            <div className="earn__item-info">
-                <p className='title'>{title}</p>
-                <p className='subtitle'>Награда {award}</p>
-                {isBalanceUpdated ? null : <p className='progress'>Прогрес {totalClicked} / {goal}</p>}
+        <div className="list__item">
+            <div className="list__side">
+                <p className="list__item-title">{title}</p>
+                <p className="list__item-description"><img src={swordImage} alt="coin"/>{award}</p>
             </div>
-            <div className="earn__item-image">
-                <img width="40" height="40" src="https://img.icons8.com/emoji/48/trophy-emoji.png" alt="trophy-emoji"/>
-                <p>{totalClicked >= goal ? 'Выполнено' : 'Не выполнено'}</p>
-            </div>
+            <img src={gotoImage} alt=""/>
         </div>
     )
 }

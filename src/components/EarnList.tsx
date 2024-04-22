@@ -50,20 +50,22 @@ const EarnList: FC<IEarnListProps> = ({balance, setBalance, totalClicked}) => {
 
 
     return (
-        <div className="earn__list">
-            <h3 style={{textAlign:'center', fontSize: '24px'}}>Подгоны</h3>
-            {earns.map(earn => (
-                <EarnItem 
-                    key={earn.id}
-                    id={earn.id}
-                    title={earn.title}
-                    award={earn.award}
-                    goal={earn.goal}
-                    totalClicked={totalClicked}
-                    balance={balance}
-                    setBalance={setBalance}
-                />
-            ))}
+        <div className="list__wrap">
+            <p className="list__title">Задания за злато</p>
+            <div className="list__items-wrap">
+                {earns.map(earn => (
+                    <EarnItem
+                        key={earn.id}
+                        id={earn.id}
+                        title={earn.title}
+                        award={earn.award}
+                        goal={earn.goal}
+                        totalClicked={totalClicked}
+                        balance={balance}
+                        setBalance={setBalance}
+                    />
+                ))}
+            </div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
 import EarnList from '../components/EarnList'
+import coinImage from "../assets/coin.svg";
+import energyImage from "../assets/energy-icon.svg";
 
 interface IEarnPageProps{
     balance: number,
@@ -11,11 +12,15 @@ interface IEarnPageProps{
 const EarnPage: FC<IEarnPageProps> = ({totalClicked, balance, setBalance}) => {
 
     return (
-        <div className="page__content">
-            <div className="earn__nav">
-                <Link to="/"><img width="22" height="22" src="https://img.icons8.com/windows/32/ffffff/long-arrow-left.png" alt="long-arrow-left"/>Back</Link>
+        <div className="page__content earn">
+            <div className="stat">
+                <div className="info__balance">
+                    <img src={coinImage} alt="coin"/>
+                    <p>{balance}</p>
+                </div>
             </div>
-            <EarnList 
+
+            <EarnList
                 totalClicked={totalClicked}
                 balance={balance}
                 setBalance={setBalance}
