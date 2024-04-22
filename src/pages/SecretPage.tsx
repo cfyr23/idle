@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import coinImage from "../assets/coin.svg"
 import energyImage from "../assets/energy-icon.svg";
+import swordImage from "../assets/swords-icon.svg";
 
 interface ISecretPageProps{
     balance: number,
@@ -68,7 +69,8 @@ const SecretPage: FC<ISecretPageProps> = ({balance, setBalance}) => {
                     <div className="list__item">
                         <div className="list__side">
                             <p className="list__item-title">Славянский зажим яйцами</p>
-                            <p className="list__item-description">+1 к силе войска</p>
+                            <p className="list__item-description"><img src={swordImage} alt="energy"/>+1 к силе войска
+                            </p>
                         </div>
                         <button className="btn list__item-btn"><img src={coinImage} alt="coin"/>100</button>
                     </div>
