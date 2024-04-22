@@ -26,7 +26,7 @@ const EarnItem: FC<IEarnItemProps> = ({id, title, award, goal, totalClicked, bal
         <div className="list__item">
             <div className="list__side">
                 <p className="list__item-title">{title}</p>
-                <p className="list__item-description"><img src={swordImage} alt="coin"/>{award}</p>
+                <p className="list__item-description"><img src={swordImage} alt="sword"/>{award}</p>
             </div>
             <img src={gotoImage} alt=""/>
         </div>
