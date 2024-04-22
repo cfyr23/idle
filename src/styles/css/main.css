@@ -72,6 +72,7 @@
 .info__balance p {
     font-size: 40px;
     font-weight: 700;
+    line-height: 1;
 }
 
 .info__energy {
@@ -84,6 +85,7 @@
 .info__energy p {
     font-size: 24px;
     font-weight: 700;
+    line-height: 1;
 }
 
 .home__coin {
@@ -141,6 +143,7 @@
     width: 100%;
     align-content: center;
     justify-content: center;
+    line-height: 1;
 }
 
 .booster__item-btn img {
@@ -150,12 +153,14 @@
 
 .booster__item-title {
     font-weight: 700;
+    line-height: 1;
 }
 
 .booster__item-description {
     color: rgba(255,255,255,.5);
     font-size: 12px;
     text-align: center;
+    line-height: 1.2;
 }
 
 .nav {
@@ -164,6 +169,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 15px 16px 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav a {
