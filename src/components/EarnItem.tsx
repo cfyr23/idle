@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react'
-import swordImage from "../assets/swords-icon.svg";
+import swordImage from "../assets/swords-icon.svg"
 import gotoImage from "../assets/goto-icon.svg";
 
 interface IEarnItemProps{

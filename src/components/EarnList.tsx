@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from 'react'
-import {IEarn} from '../types/types';
+import {IEarn} from '../types/types'
 import EarnItem from './EarnItem';
 
 interface IEarnListProps{

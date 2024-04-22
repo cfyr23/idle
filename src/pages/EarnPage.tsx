@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import EarnList from '../components/EarnList'
 import coinImage from "../assets/coin.svg";
-import energyImage from "../assets/energy-icon.svg";
 
 interface IEarnPageProps{
     balance: number,
